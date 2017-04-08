@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>360</title>
+    <style>
+        body {
+            margin: 0px;
+            border: 0px;
+        }
+
+        .fu {
+            background-color: #363636;
+            border: 1px;
+            padding: 1px;
+        }
+
+        .one {
+            width: 1240px;
+            height: 40px;
+            background-color: #363636;
+            margin: auto;
+            font-size: 14px;
+            line-height: 40px;
+            border: 1px;
+            padding: 1px;
+        }
+
+        .two {
+            float: left;
+        }
+
+        .three {
+            background: url("./01.png");
+            background-repeat: no-repeat;
+            background-position: 0px -257px;
+            float: left;
+            padding-left: 17px;
+        }
+
+        .four {
+            float: right;
+        }
+
+        .two a,
+        .three a,
+        .four a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        .one::after,
+        .one::before {
+            content: "";
+            height: 0;
+            line-height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .one {
+            zoom: 1;
+        }
+
+        .xia {
+            width: 1240px;
+            height: 100px;
+            margin: auto;
+            margin-top: 50px;
+            padding-top: 20px;
+        }
+
+        .xia-one {
+            float: left;
+            width: 150px;
+            height: 40px;
+            background-image: url("./02.png");
+        }
+
+        .xia-two {
+            float: right;
+            width: 90px;
+            height: 40px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            background-image: url("./t.png");
+            background-repeat: no-repeat;
+            background-position: 13px 12px;
+            padding-left: 30px;
+            line-height: 40px;
+            font-size: 10px;
+        }
+
+        .xia-three {
+            margin-right: 60px;
+            float: right;
+            width: 430px;
+            height: 100px;
+        }
+
+        .three-one {
+            height: 42px;
+            width: 70px;
+            background-color: #23ac38;
+            float: right;
+            background-image: url("./t.png");
+            background-repeat: no-repeat;
+            background-position: 20px -111px;
+            cursor: pointer;
+        }
+
+        .input {
+            height: 38px;
+            width: 348px;
+            border: 1px solid #23ac38;
+            outline-style: none;
+            padding-left: 10px;
+        }
+
+        .three-two {
+            margin-top: 10px;
+            margin-left: -50px;
+        }
+
+        .three-two li {
+            float: left;
+            font-size: 10px;
+            list-style-type: none;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fu">
+        <div class="one">
+
+            <div class="two">
+                <a href="#">大客户采购</a>
+                <a href="#">帮助中心</a>
+                <a href="#">收藏本站</a>
+                <a href="#">商品入驻</a>
+                <a href="#">老人手环申请</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </div>
+            <div class="three"><a href="#">手机360商城</a></div>
+            <div style="color:white" class="four">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <span>&nbsp;&nbsp;&nbsp;|</span>
+                <a href="#">F码购买</a>
+                <a href="#">我的订单</a>
+            </div>
+        </div>
+    </div>
+    <div class="xia">
+        <div class="xia-one">
+        </div>
+        <div class="xia-two">
+            <a style="color:black" href="#">我的购物车</a>(
+            <span>0</span> )
+
+        </div>
+        <div class="xia-three">
+            <div class="three-one">
+
+            </div>
+            <input class="input" type="text">
+            <ul  class="three-two">
+                <li><a style="color:black" href="#">360安全路由5G</a></li>
+                <li><a style="color:black" href="#">360安全路由5G</a></li>
+                <li><a style="color:black" href="#">360安全路由5G</a></li>
+                <li><a style="color:black" href="#">360安全路由5G</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

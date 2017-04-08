@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>visibility</title>
+    <style media="screen">
+        .one,
+        .two,
+        .three {
+            width: 300px;
+            height: 300px;
+        }
+
+        .one {
+            float: right;
+            background-color: yellow;
+        }
+
+        .two {
+            float: left;
+            background-color: red;
+        }
+
+        .three {
+            background-color: green;
+        }
+        /*.kong{
+          clear: both;
+
+
+        }*/
+        /*.fu{
+          overflow: auto;
+        }*/
+        .fu::after{
+          content: " ";
+        
+
+          clear: both;
+          display: block;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="fu">
+        <div class="one">
+            one
+        </div>
+        <div class="two">
+            two
+        </div>
+        <!--<p class="kong">
+
+        </p>-->
+    </div>
+    <p class="three">
+        three
+    </p>
+
+</body>
+
+</html>

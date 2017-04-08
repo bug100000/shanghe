@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>尚合</title>
+    <style media="screen">
+        body {
+            margin: 0px;
+        }
+
+        .head {
+            height: 72px;
+        }
+
+        .inhead {
+            margin: auto;
+            width: 978px;
+            height: 70px;
+            padding: 1px;
+        }
+
+        .inhead-shanghelogo {
+            width: 179px;
+            height: 24px;
+            background: url("./logo.png") no-repeat;
+            margin-top: 24px;
+            float: left;
+        }
+
+        .inhead-sosuo {
+            width: 200px;
+            height: 30px;
+            float: right;
+            margin-top: 24px;
+        }
+
+        .inhead-sosuologo {
+            width: 33px;
+            height: 30px;
+            background-color: red;
+            float: right;
+        }
+
+        .input-one {
+            height: 24px;
+            width: 157px;
+            padding-left: 5px;
+            background-image: url("./input_r1_c1.png");
+            background-position: 0px -3px;
+        }
+
+        .input-one:hover {
+            background-image: url("./canvas.png");
+        }
+
+        .neck {
+            height: 60px;
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f6f6f8), to(#b8c4cb));
+        }
+
+        .neck ul {
+            margin: auto;
+            width: 900px;
+            height: 60px;
+        }
+
+        .ul-kuang {
+            margin-left: -60px;
+        }
+
+        .neck ul li {
+            width: 130px;
+            height: 58px;
+            /*border: 1px solid green;*/
+            border-right: 1px solid #b8c4cb;
+            text-align: center;
+            line-height: 60px;
+            list-style: none;
+            float: left;
+        }
+
+        .neck ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .pic {
+            margin: auto;
+            width: 980px;
+            height: 630px;
+        }
+
+        .pic-dian {
+            margin: auto;
+            width: 34px;
+            height: 14px;
+        }
+
+        .gonggao {
+            height: 30px;
+            background-color: #f6f6f8;
+            border-top: 1px solid #b8c4cb;
+            border-bottom: 1px solid #b8c4cb;
+        }
+
+        .gonggao-zhongkuang {
+            margin: auto;
+            width: 980px;
+            height: 30px;
+        }
+
+        .gonggao-zi {
+            width: 600px;
+            height: 30px;
+            font-size: 15px;
+            line-height: 30px;
+            float: left;
+        }
+
+        .gonggao-pic {
+            float: right;
+            margin-top: 6px;
+        }
+
+        .sanpic {
+            height: 300px;
+            margin-top: 15px;
+        }
+
+        .sanpic-kuang {
+            width: 1008px;
+            height: 300px;
+            margin: auto;
+        }
+
+        .sanpic-one {
+            background-image: url("./banner.png");
+            margin-left: 10px;
+            float: left;
+            width: 330px;
+            height: 250px;
+            border: 1px solid #b8c4cb;
+        }
+
+        .sanpic-two {
+            margin-left: 10px;
+            float: left;
+            width: 360px;
+            height: 250px;
+            border: 1px solid #b8c4cb;
+        }
+
+        .sanpic-three {
+            margin-left: 10px;
+            float: left;
+            width: 270px;
+            height: 250px;
+            border: 1px solid #b8c4cb;
+        }
+
+        .sanpic-topzi {
+            font-weight: bolder;
+            margin: 10px;
+            height: 30px;
+        }
+
+        .gengduo {
+            float: right;
+        }
+
+        .ul-xinwen {
+            line-height: 25px;
+            margin-left: -10px;
+            font-size: 15px;
+            list-style: none;
+        }
+
+        .ul-xinwen li a {
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #555555;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .sanpic-three-ul {
+            font-size: 15px;
+            list-style: none;
+        }
+
+        .sanpic-three-ul li {
+            height: 15px;
+            margin-top: 5px;
+            border-left: 2px solid green;
+            padding-left: 10px;
+            line-height: 15px;
+        }
+
+        .sanpic-three-shenzhen {
+            margin-top: 30px;
+            margin-left: 39px;
+            font-size: 15px;
+        }
+
+        .bottom {
+            height: 350px;
+            background: #2d2d2d;
+        }
+
+        .bottom-kuang-one {
+            margin: auto;
+            height: 250px;
+            width: 985px;
+            border: 1px solid #2d2d2d;
+        }
+
+        .bottom-shouye {
+            float: left;
+            margin-top: 10px;
+            width: 900px;
+            height: 230px;
+            margin-left: -40px;
+        }
+
+        .bottom-shouye li {
+            margin-left: -5px;
+            width: 110px;
+            float: left;
+            list-style: none;
+            font-size: 13px;
+        }
+
+        .bottom-shouye li ul li a {
+            color: white;
+        }
+
+        .top-logo {
+            float: right;
+        }
+
+        .shangheshouyezi strong a {
+            display: inline-block;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        /*.bottom-kuang-one::before,
+        .bottom-kuang-one::after{
+          content: "";
+          width: 0px;
+          height: 0px;
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0px;
+        }*/
+        .bottom-kuang-two{
+          text-align: center;
+          font-size: 13px;
+          font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="inhead">
+            <div class="inhead-shanghelogo">
+            </div>
+            <div class="inhead-sosuo">
+                <div class="inhead-sosuologo">
+                    <img src="./input_r1_c2.png" alt="" />
+                </div>
+                <input class="input-one" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="neck">
+        <ul>
+            <div class="ul-kuang">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">智能手机</a></li>
+                <li><a href="#">平板电脑</a></li>
+                <li><a href="#">配件</a></li>
+                <li><a href="#">服务支持</a></li>
+                <li><a href="#">关于商合</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="pic">
+        <img src="./banner.png">
+        <div class="pic-dian">
+            <img src="./point.png" />
+        </div>
+    </div>
+    <div class="gonggao">
+        <div class="gonggao-zhongkuang">
+            <div class="gonggao-zi"><strong>最新公告：</strong>尚合Aone智能手机入网证已经获工商部门批准下发。尚合官方</div>
+            <div class="gonggao-pic"><img src="share.png" /></div>
+        </div>
+    </div>
+    <div class="sanpic">
+        <div class="sanpic-kuang">
+            <div class="sanpic-one">
+                <div class="sanpic-topzi"><img src="./canvas_r4_c4.png" /><a style="color: green;" href="#">&nbsp;新品发布</a></div>
+            </div>
+            <div class="sanpic-two">
+                <div class="sanpic-topzi"><img src="./canvas_r4_c4.png" /><a style="color: green;" href="#">&nbsp;新闻中心<div style="color: black;" class="gengduo">更多</div></a></div>
+                <ul class="ul-xinwen">
+                    <li><a style="color:red" href="https://www.baidu.com"><strong>致歉公告</strong></a></li>
+                    <li><a href="#">首批尚合Aone已全部售罄！</a></li>
+                    <li><a href="#">【媒体报导】国产高性价比尚合Aone四核手机评测</a></li>
+                    <li><a href="#">首批尚合Aone已全部售罄！</a></li>
+                    <li><a href="#">首批尚合Aone已全部售罄！</a></li>
+                    <li><a href="#">首批尚合Aone已全部售罄！</a></li>
+                </ul>
+
+            </div>
+            <div class="sanpic-three">
+                <div class="sanpic-topzi"><img src="./canvas_r4_c4.png" /><a style="color: green;" href="#">&nbsp;技术与支持</a></div>
+                <ul class="sanpic-three-ul">
+                    <li><a href="#">售后解释</a></li>
+                    <li><a href="#">售后服务</a></li>
+                    <li><a href="#">联保网点</a></li>
+                    <li><a href="#">常见问题FAQ</a></li>
+                </ul>
+                <div class="sanpic-three-shenzhen">
+                    深圳市汇聚众合科技发展有限公司<br> 服务热线：400-633-792
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-kuang-one">
+            <ul class="bottom-shouye">
+                <li>
+                    <ul>
+                        <li class="shangheshouyezi"><strong><a href="#">尚合首页</a></strong></li>
+                        <li><a href="#">尚合首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="shangheshouyezi"><strong><a href="#">尚合首页</a></a></strong></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="shangheshouyezi"><strong><a href="#">尚合首页</a></strong></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#"><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="shangheshouyezi"><strong><a href="#">尚合首页</a></strong></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="shangheshouyezi"><strong><a href="#">尚合首页</a></strong></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="shangheshouyezi"><strong><a href="#"><a href="#">尚合首页</a></strong></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="shangheshouyezi"><strong><a href="#">尚合首页</a></strong></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="shangheshouyezi"><strong><a href="#">尚合首页</a></strong></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                        <li><a href="#">尚合首页</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="top-logo">
+                <img src="./canvas_r4_c3.png" />
+
+            </div>
+
+        </div>
+        <hr style="height:1px;border:none;border-top:1px dashed #b8c4cb;" />
+        <div class="bottom-kuang-two">
+            。2011-2012版权所有 深圳市汇聚众合科技发展有限公司 （品牌：尚合-SAMHAVE）服务热线：400-633-7922
+            <br>经营许可证编号：粤ICP备11077821号-1
+        </div>
+</body>
+
+</html>
